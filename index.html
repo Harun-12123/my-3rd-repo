@@ -27,6 +27,8 @@
    </style>
 </head>
 <body>
+    <button id="black">Night Mood</button>
+    <button id="white">Day mood</button>
     <h1>my all class</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi deserunt fuga, obcaecati mollitia, eos reiciendis magnam reprehenderit vitae quod, voluptatibus odio voluptate aut a necessitatibus deleniti ratione perspiciatis qui recusandae.</p>
     <h1>my all class</h1>
@@ -97,6 +99,18 @@
             <input type="radio" name="xx" id="other">
         </fieldset>
     </form>
+
+
+    <script>
+        document.getElementById('black').addEventListener('click', function(){
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
+        })
+        document.getElementById('white').addEventListener('click', function(){
+            document.body.style.backgroundColor = "white";
+            document.body.style.color = "black";
+        })
+    </script>
 
    
 </body>
